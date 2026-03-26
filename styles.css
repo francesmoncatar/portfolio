@@ -1,0 +1,106 @@
+body {
+    background-color: #f4c9d6;
+    font-family: 'Quicksand', sans-serif;
+    color: #3e2723;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 1s ease-in;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+}
+
+.sparkle {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    font-size: 2rem;
+}
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    color: #3e2723;
+    margin-top: 10px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 2px solid #3e2723;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #d0637c;
+    font-size: 1.5rem;
+    border-bottom: 2px dashed #ffdae0;
+    padding-bottom: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #ffe5ec;
+}
+
+.skills-tags span {
+    display: inline-block;
+    background: #3e2723;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.footer-deco {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.6;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    h1 { font-size: 1.8rem; }
+    .card { padding: 15px; }
+}
